@@ -1,0 +1,574 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Casa Encanto. Salones, espacios, organización y servicios para matrimonios, quince años, primeras comuniones, cumpleaños y eventos empresariales.">
+  <meta name="theme-color" content="#102344">
+  <title>Casa Encanto | Casas, Salones y Recepciones</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+
+  <link rel="icon" type="image/png" href="./assets/logo.png">
+  <link rel="apple-touch-icon" href="./assets/logo.png"> 
+</head>
+<body>
+
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <div>
+        <span>☎</span> Atención comercial
+        <span class="top-separator">|</span>
+        <span>⌖</span> Bogotá, Colombia
+      </div>
+      <div>
+        <span>✉</span> Cotizaciones y reservas
+        <span class="top-separator">|</span>
+        <a href="#contacto">Solicitar información ↗</a>
+      </div>
+    </div>
+  </div>
+
+  <header class="header" id="header">
+    <div class="container nav-container">
+      <a href="#inicio" class="logo">
+        <img src="assets/Logo.png" alt="Casa Eventos">
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" id="navigation">
+        <a href="#inicio">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#casas">Nuestras casas</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#preguntas">Preguntas frecuentes</a>
+        <a class="nav-button" href="#contacto">Cotizar evento <span>↗</span></a>
+<button
+  id="theme-toggle"
+  class="theme-toggle"
+  type="button"
+  aria-label="Activar modo oscuro"
+  title="Cambiar apariencia"
+>
+  <span id="theme-icon">🌙</span>
+</button>
+  
+      </nav>
+    </div>
+  </header>
+
+  <main>
+  <section class="hero" id="inicio">
+      <div class="hero-slides" id="heroSlides">
+        <div class="hero-slide active" style="background-image:url('./assets/Portada.jpg')"></div>
+        <div class="hero-slide active" style="background-image:url('./assets/Portada1.jpg')"></div>
+        <div class="hero-slide active" style="background-image:url('./assets/Portada2.jpg')"></div>
+        <div class="hero-slide active" style="background-image:url('./assets/Portada3.jpg')"></div>
+        <div class="hero-slide active" style="background-image:url('./assets/Portada4.jpg')"></div>
+        <div class="hero-slide active" style="background-image:url('./assets/Portada5.jpg')"></div>
+      </div>
+
+      <div class="hero-shade"></div>
+
+      <div class="container hero-container">
+        <div class="hero-copy reveal">
+          <span class="hero-kicker">CASA EVENTOS · BOGOTÁ</span>
+          <h1>El lugar ideal para<br>celebrar <em>tus momentos.</em></h1>
+          <p>
+            Encuentra el espacio perfecto para tu celebración.
+            Cuatro casas, múltiples posibilidades y todo lo que necesitas
+            para hacer de tu evento una experiencia inolvidable.
+          </p>
+          <div class="hero-buttons">
+            <a href="#casas" class="button button-gold">Conoce nuestras casas ↗</a>
+            <a href="#contacto" class="button button-white">Cotiza tu evento</a>
+          </div>
+        </div>
+
+        <div class="hero-controls">
+          <button id="heroPrev" aria-label="Imagen anterior">←</button>
+          <span id="heroCount">01 / 06</span>
+          <button id="heroNext" aria-label="Imagen siguiente">→</button>
+        </div>
+      </div>
+
+      <div class="hero-bottom container">
+        <span>ESPACIOS PARA CELEBRAR</span>
+        <span>BOGOTÁ · COLOMBIA</span>
+      </div>
+    </section>
+
+    <!-- SERVICIOS PRINCIPALES -->
+    <section class="services-section section" id="servicios">
+      <div class="container">
+        <div class="section-title reveal">
+          <div>
+            <span class="section-label">LO QUE HACEMOS</span>
+            <h2>Nuestros servicios <em>para eventos</em></h2>
+          </div>
+          <p>
+            Acompañamos tus celebraciones con espacios especiales
+            y alternativas para cada ocasión.
+          </p>
+        </div>
+
+        <div class="services-grid">
+
+          <article class="service-card reveal">
+            <div class="service-photo">
+              <img src="./assets/matrimonio.jpg" alt="Matrimonios y bodas">
+              <span class="service-number">01</span>
+            </div>
+            <div class="service-content">
+              <span class="small-label">UNA HISTORIA PARA SIEMPRE</span>
+              <h3>Matrimonios</h3>
+              <p>Un escenario especial para celebrar el amor y compartir uno de los días más importantes de tu vida.</p>
+              <a href="#contacto" data-event="Matrimonios">Cotizar matrimonio <span>↗</span></a>
+            </div>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-photo">
+              <img src="./assets/quince.jpg" alt="Fiesta de quince años">
+              <span class="service-number">02</span>
+            </div>
+            <div class="service-content">
+              <span class="small-label">UNA NOCHE INOLVIDABLE</span>
+              <h3>Quince años</h3>
+              <p>Celebraciones llenas de emoción, elegancia y detalles para hacer realidad una noche soñada.</p>
+              <a href="#contacto" data-event="Quince años">Cotizar quince años <span>↗</span></a>
+            </div>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-photo">
+              <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=900&q=85" alt="Primeras comuniones">
+              <span class="service-number">03</span>
+            </div>
+            <div class="service-content">
+              <span class="small-label">CELEBRACIONES FAMILIARES</span>
+              <h3>Primeras comuniones</h3>
+              <p>Espacios para compartir en familia y celebrar esos momentos que se quedan en el corazón.</p>
+              <a href="#contacto" data-event="Primeras comuniones">Cotizar comunión <span>↗</span></a>
+            </div>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-photo">
+              <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=900&q=85" alt="Fiestas de cumpleaños">
+              <span class="service-number">04</span>
+            </div>
+            <div class="service-content">
+              <span class="small-label">CELEBRA CADA AÑO</span>
+              <h3>Cumpleaños</h3>
+              <p>Haz de tu celebración un encuentro único con familiares, amigos y personas especiales.</p>
+              <a href="#contacto" data-event="Cumpleaños">Cotizar cumpleaños <span>↗</span></a>
+            </div>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-photo">
+              <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=900&q=85" alt="Eventos empresariales">
+              <span class="service-number">05</span>
+            </div>
+            <div class="service-content">
+              <span class="small-label">ENCUENTROS CORPORATIVOS</span>
+              <h3>Eventos empresariales</h3>
+              <p>Espacios para reuniones, encuentros corporativos, aniversarios, lanzamientos y celebraciones empresariales.</p>
+              <a href="#contacto" data-event="Eventos empresariales">Cotizar evento <span>↗</span></a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- BANNER COTIZACIÓN -->
+    <section class="quote-strip">
+      <div class="container quote-strip-inner">
+        <div>
+          <span class="section-label light-label">ESTAMOS LISTOS PARA RECIBIRTE</span>
+          <h2>¿Ya tienes una fecha especial?</h2>
+          <p>Cuéntanos qué quieres celebrar y encontremos juntos el lugar ideal.</p>
+        </div>
+        <a href="#contacto" class="button button-gold">Solicitar cotización ↗</a>
+      </div>
+    </section>
+
+    <!-- CUATRO CASAS -->
+    <section class="houses-section section" id="casas">
+      <div class="container">
+        <div class="section-title reveal">
+          <div>
+            <span class="section-label">NUESTROS ESPACIOS</span>
+            <h2>Conoce nuestras <em>casas</em></h2>
+          </div>
+          <p>
+            Cada casa tiene su propio estilo. Descubre nuestros espacios,
+            conoce sus ambientes y encuentra el escenario para tu evento.
+          </p>
+        </div>
+
+        <div class="houses-grid" id="housesGrid"></div>
+      </div>
+    </section>
+
+    <!-- EMPRESA -->
+    <section class="company-section section" id="nosotros">
+      <div class="container company-grid">
+        <div class="company-gallery reveal">
+          <img class="company-main-image" src="./assets/Bajo1.jpg" alt="Recepción Casa Eventos">
+          <img class="company-small-image" src="./assets/Detalles/hielo.JPG" alt="Decoración de evento">
+          <span class="company-stamp">CASA<br>ENCANTO</span>
+        </div>
+
+        <div class="company-content reveal">
+          <span class="section-label">SOBRE NOSOTROS</span>
+          <h2>Un espacio para<br>cada <em>celebración.</em></h2>
+          <p>
+            En Casa Eventos ponemos a tu disposición diferentes espacios
+            para celebrar los momentos más importantes de tu vida.
+          </p>
+          <p>
+            Queremos que encuentres una casa que se adapte a tu evento,
+            al estilo de tu celebración y a la experiencia que deseas compartir
+            con tus invitados.
+          </p>
+          <div class="company-points">
+            <div><span>✓</span> Cuatro espacios para elegir</div>
+            <div><span>✓</span> Alternativas para eventos sociales y empresariales</div>
+            <div><span>✓</span> Atención personalizada para cotizaciones</div>
+          </div>
+          <a href="#contacto" class="button button-navy">Conversemos sobre tu evento ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICIOS COMPLEMENTARIOS -->
+    <section class="extras-section section">
+      <div class="container">
+        <div class="section-title reveal">
+          <div>
+            <span class="section-label">CADA DETALLE CUENTA</span>
+            <h2>Todo para tu <em>celebración</em></h2>
+          </div>
+          <p>Consulta las alternativas y servicios disponibles para complementar tu evento.</p>
+        </div>
+
+        <div class="extras-grid">
+          <article class="extra-card reveal">
+            <img src="./assets/Detalles/meseros.jpg" alt="Meseros">
+            <div><span>01</span><h3>Meseros</h3><p></p></div>
+          </article>
+          <article class="extra-card reveal">
+            <img src="./assets/Detalles/cocteles.JPG" alt="Coctéles">
+            <div><span>02</span><h3>Coctéles</h3><p></p></div>
+          </article>
+          <article class="extra-card reveal">
+            <img src="./assets/Detalles/ponque.jpg" alt="Ponqués">
+            <div><span>03</span><h3>Ponqués</h3><p></p></div>
+          </article>
+          <article class="extra-card reveal">
+            <img src="./assets/Detalles/dj.jpg" alt="Dj">
+            <div><span>04</span><h3>Sonido y DJ</h3><p></p></div>
+          </article>
+          <article class="extra-card reveal">
+            <img src="./assets/Detalles/horaloca.jpg" alt="Hora Loca">
+            <div><span>05</span><h3>Hora Loca</h3><p></p></div>
+          </article>
+          <article class="extra-card reveal">
+            <img src="./assets/Detalles/horalocavip.jpg" alt="Hora Loca VIP">
+            <div><span>06</span><h3>Hora Loca VIP</h3><p></p></div>
+          </article>
+          <article class="extra-card reveal">
+            <img src="./assets/Detalles/fotografía.jpg" alt="Fotografía y Video.">
+            <div><span>07</span><h3>Fotografía y Video</h3><p></p></div>
+          </article>
+          <article class="extra-card reveal">
+            <img src="./assets/Detalles/tarjetería.jpg" alt="Tarjetería">
+            <div><span>08</span><h3>Tarjetería</h3><p></p></div>
+          </article>
+          <article class="extra-card reveal">
+            <img src="./assets/Detalles/recordatorio.jpg" alt="Recordatorios">
+            <div><span>09</span><h3>Recordatorios</h3><p></p></div>
+          </article>
+          <article class="extra-card reveal">
+            <img src="./assets/Detalles/templo.jpg" alt="templo">
+            <div><span>10</span><h3>Templo Protocolo</h3><p></p></div>
+          </article>
+          <article class="extra-card reveal">
+            <img src="./assets/Detalles/kit.jpg" alt="Kit Matrimonio">
+            <div><span>11</span><h3>Kit Matrimonio</h3><p></p></div>
+          </article>
+          <article class="extra-card reveal">
+            <img src="./assets/Detalles/inicio.jpg" alt="Inicio Protocolo">
+            <div><span>12</span><h3>Inicio Protocolo</h3><p></p></div>
+          </article>
+          <article class="extra-card reveal">
+            <img src="./assets/Detalles/musicos.jpg" alt="Musicos">
+            <div><span>13</span><h3>Músicos</h3><p></p></div>
+          </article>
+          <article class="extra-card reveal">
+            <img src="./assets/Detalles/show.jpg" alt="Show VIP">
+            <div><span>14</span><h3>Show VIP</h3><p></p></div>
+          </article>
+          <article class="extra-card reveal">
+            <img src="./assets/Detalles/sinfonia.jpg" alt="Sinfonía">
+            <div><span>15</span><h3>Sinfonía</h3><p></p></div>
+          </article>
+          <article class="extra-card reveal">
+            <img src="./assets/Detalles/vestidos.JPG" alt="Vestidos">
+            <div><span>16</span><h3>Vestidos</h3><p></p></div>
+          </article>
+          <article class="extra-card reveal">
+            <img src="./assets/Detalles/carros.jpg" alt="Carros">
+            <div><span>17</span><h3>Carros</h3><p></p></div>
+          </article>
+          <article class="extra-card reveal">
+            <img src="./assets/Detalles/mesa.jpg" alt="Mesa Dulce">
+            <div><span>18</span><h3>Mesa Dulce</h3><p></p></div>
+          </article>
+          <article class="extra-card reveal">
+            <img src="./assets/Detalles/chispitas.jpg" alt="Chispitas">
+            <div><span>19</span><h3>Chispitas</h3><p></p></div>
+          </article>
+          <article class="extra-card reveal">
+            <img src="./assets/Detalles/cafe.jpg" alt="Estación de Café">
+            <div><span>20</span><h3>Estación de Café</h3><p></p></div>
+          </article>
+          <article class="extra-card reveal">
+            <img src="./assets/Detalles/hielo.jpg" alt="Hielo Seco">
+            <div><span>21</span><h3>Hielo Seco</h3><p></p></div>
+          </article>
+          <article class="extra-card reveal">
+            <img src="./assets/Detalles/volcanes.jpg" alt="Volcanes">
+            <div><span>22</span><h3>Volcanes</h3><p></p></div>
+          </article>
+          <article class="extra-card reveal">
+            <img src="./assets/Detalles/recreación.jpg" alt="Recreación">
+            <div><span>23</span><h3>Recreación</h3><p></p></div>
+          </article>
+          <article class="extra-card reveal">
+            <img src="./assets/Detalles/comida.jpg" alt="Comida">
+            <div><span>24</span><h3>Comida</h3><p></p></div>
+          </article>
+          <article class="extra-card reveal">
+            <img src="./assets/Detalles/pirotecnia.jpg" alt="Pirotecnia">
+            <div><span>25</span><h3>Pirotecnia</h3><p></p></div>
+          </article>
+          <article class="extra-card reveal">
+            <img src="./assets/Detalles/escultura.jpg" alt="Esculturas de Hielo">
+            <div><span>26</span><h3>Escultura de Hielo</h3><p></p></div>
+          </article>
+          <article class="extra-card reveal">
+            <img src="./assets/Detalles/backing.jpg" alt="Backing de Fotos">
+            <div><span>27</span><h3>Backing de Fotos</h3><p></p></div>
+          </article>
+          <article class="extra-card reveal">
+            <img src="./assets/Detalles/fuente.jpg" alt="Fuente de Chocolate">
+            <div><span>28</span><h3>Fuente de Chocolate</h3><p></p></div>
+          </article>
+          <article class="extra-card reveal">
+            <img src="./assets/Detalles/ventury.jpg" alt="Ventury">
+            <div><span>29</span><h3>Ventury</h3><p></p></div>
+          </article>
+        </div>
+        <p class="availability-note">Los servicios complementarios están sujetos a disponibilidad y cotización.</p>
+      </div>
+    </section>
+
+    <!-- GALERÍA -->
+    <section class="gallery-section section">
+      <div class="container">
+        <div class="section-title reveal">
+          <div>
+            <span class="section-label">INSPIRACIÓN</span>
+            <h2>Momentos que <em>se viven</em></h2>
+          </div>
+          <p>Una selección de ambientes y montajes para inspirar tu próxima celebración.</p>
+        </div>
+
+        <div class="gallery-grid" id="galleryGrid">
+          <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=900&q=85" alt="Matrimonio">
+          <img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=900&q=85" alt="Recepción">
+          <img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=900&q=85" alt="Salón">
+          <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=900&q=85" alt="Celebración">
+          <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=900&q=85" alt="Evento">
+        </div>
+      </div>
+    </section>
+
+    <!-- PREGUNTAS -->
+    <section class="faq-section section" id="preguntas">
+      <div class="container faq-grid">
+        <div class="faq-heading reveal">
+          <span class="section-label">RESOLVEMOS TUS DUDAS</span>
+          <h2>Preguntas <em>frecuentes</em></h2>
+          <p>Queremos ayudarte a encontrar el espacio ideal para tu celebración.</p>
+          <a href="#contacto" class="text-link">¿TIENES OTRA PREGUNTA? CONTÁCTANOS ↗</a>
+        </div>
+
+        <div class="faq-list reveal">
+          <details>
+            <summary>¿Cuáles son las casas disponibles?<span>+</span></summary>
+            <p>Contamos con Casa Nápoles, Casa Normandía, Casa Santa Isabel y Casa Teusaquillo.</p>
+          </details>
+          <details>
+            <summary>¿Qué eventos puedo realizar?<span>+</span></summary>
+            <p>Matrimonios, quince años, primeras comuniones, cumpleaños y eventos empresariales.</p>
+          </details>
+          <details>
+            <summary>¿Cómo puedo conocer los espacios?<span>+</span></summary>
+            <p>Puedes solicitar una visita mediante nuestro formulario de contacto para coordinar la disponibilidad.</p>
+          </details>
+          <details>
+            <summary>¿Cómo solicito una cotización?<span>+</span></summary>
+            <p>Completa el formulario, indícanos el tipo de evento y la casa que te interesa. Podrás enviar los datos por WhatsApp.</p>
+          </details>
+          <details>
+            <summary>¿Qué servicios adicionales ofrecen?<span>+</span></summary>
+            <p>Consulta con nuestro equipo las alternativas disponibles de decoración, catering, sonido e iluminación.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="contact-section section" id="contacto">
+      <div class="container contact-grid">
+        <div class="contact-copy reveal">
+          <span class="section-label light-label">HABLEMOS DE TU EVENTO</span>
+          <h2>Encuentra tu<br>casa <em>ideal.</em></h2>
+          <p>Déjanos tus datos y cuéntanos qué tienes en mente. Queremos ayudarte a encontrar el espacio perfecto.</p>
+          <div class="contact-information">
+            <div><span>⌖</span><p><small>UBICACIÓN</small>Bogotá, Colombia</p></div>
+            <div><span>✉</span><p><small>COTIZACIONES</small>Atención personalizada</p></div>
+            <div><span>◷</span><p><small>VISITAS</small>Con cita previa</p></div>
+          </div>
+        </div>
+
+        <form id="quoteForm" class="quote-form reveal">
+          <h3>Solicita información</h3>
+          <p>Completa los siguientes campos.</p>
+
+          <div class="form-row">
+            <label>Nombre completo *
+              <input name="name" required placeholder="Tu nombre">
+            </label>
+            <label>Teléfono *
+              <input name="phone" type="tel" required placeholder="Tu teléfono">
+            </label>
+          </div>
+
+          <label>Correo electrónico
+            <input name="email" type="email" placeholder="Tu correo">
+          </label>
+
+          <div class="form-row">
+            <label>Tipo de evento *
+              <select name="event" required>
+                <option value="">Seleccionar</option>
+                <option>Matrimonios</option>
+                <option>Quince años</option>
+                <option>Primeras comuniones</option>
+                <option>Cumpleaños</option>
+                <option>Eventos empresariales</option>
+              </select>
+            </label>
+
+            <label>Casa de interés
+              <select name="house">
+                <option value="">Seleccionar</option>
+                <option>Casa VIP</option>
+                <option>Casa Nápoles</option>
+                <option>Casa Normandía - Piso 1</option>
+                <option>Casa Normandía - Piso 2</option>
+                <option>Casa Santa Isabel - Piso 1</option>
+                <option>Casa Santa Isabel - Piso 2</option>
+                <option>Casa Santa Isabel - Piso 3</option>
+                <option>Casa Santa Isabel - Piso 4</option>
+                <option>Casa Teusaquillo</option>
+              </select>
+            </label>
+          </div>
+
+          <div class="form-row">
+            <label>Fecha aproximada
+              <input type="date" name="date" id="eventDate">
+            </label>
+            <label>Cantidad de Invitados
+              <input type="number" name="guests" min="1" placeholder="Cantidad">
+            </label>
+          </div>
+
+          <label>Información adicional
+            <textarea name="message" rows="3" placeholder="Cuéntanos sobre tu celebración"></textarea>
+          </label>
+
+          <button class="button button-gold form-submit" type="submit">Enviar cotización por WhatsApp ↗</button>
+          <small>El envío abrirá una conversación de WhatsApp con los datos diligenciados.</small>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <img src="assets/Logo.png" alt="Casa Eventos">
+        <p>Espacios para celebrar los momentos más importantes de tu vida.</p>
+      </div>
+
+      <div>
+        <h4>LA EMPRESA</h4>
+        <a href="#nosotros">Quiénes somos</a>
+        <a href="#casas">Nuestras casas</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+
+      <div>
+        <h4>SERVICIOS</h4>
+        <a href="#servicios">Matrimonios</a>
+        <a href="#servicios">Quince años</a>
+        <a href="#servicios">Primeras comuniones</a>
+        <a href="#servicios">Cumpleaños</a>
+        <a href="#servicios">Empresariales</a>
+      </div>
+
+      <div>
+        <h4>COTIZACIONES</h4>
+        <p>¿Estás planeando una celebración?</p>
+        <a href="#contacto" class="footer-cta">Solicitar cotización ↗</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom container">
+      <span>© <span id="year"></span> TEKVANCE - CASA ENCANTO 2026. TODOS LOS DERECHOS RESERVADOS.</span>
+      <span>BOGOTÁ · COLOMBIA</span>
+    </div>
+  </footer>
+
+  <a href="#" class="whatsapp-button" id="whatsappButton" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <span>◉</span>
+  </a>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button id="lightboxClose" aria-label="Cerrar">×</button>
+    <button id="lightboxPrev" aria-label="Anterior">‹</button>
+    <img id="lightboxImage" src="" alt="Imagen ampliada">
+    <button id="lightboxNext" aria-label="Siguiente">›</button>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
